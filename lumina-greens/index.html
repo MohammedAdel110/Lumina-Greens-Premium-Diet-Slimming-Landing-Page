@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Greens | Premium Diet & Slimming</title>
+    <meta name="description" content="Lumina Greens offers a premium diet and slimming culinary experience. Gourmet, calorie-controlled meals that prioritize flavor without the weight.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Parallax Background Elements -->
+    <div class="background-elements" aria-hidden="true">
+        <div class="parallax-element leaf-1"></div>
+        <div class="parallax-element leaf-2"></div>
+        <div class="parallax-element lemon"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Lumina Greens<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#menu">Our Menu</a></li>
+                <li><a href="#pricing">Plans</a></li>
+            </ul>
+            <a href="#pricing" class="btn btn-primary nav-btn">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-split hero-left">
+            <div class="hero-content scroll-reveal">
+                <span class="badge">A Culinary Experience</span>
+                <h1 class="hero-title">Flavor without the Weight</h1>
+                <p class="hero-subtitle">Gourmet, calorie-controlled, and slimming meals designed for those who refuse to compromise on taste.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#why-us" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-split hero-right">
+            <!-- 3D parallax hero image container -->
+            <div class="hero-image-wrapper">
+                <img src="assets/hero_salmon.png" alt="Signature Grilled Salmon" class="hero-image" id="hero-img">
+            </div>
+        </div>
+    </header>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <h2>The Lumina Standard</h2>
+                <p>Not a clinical diet. A lifestyle upgrade.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card scroll-reveal">
+                    <div class="feature-icon"><i class="ph ph-avocado"></i></div>
+                    <h3>Keto-Friendly</h3>
+                    <p>Meticulously sourced low-carb ingredients that keep you in fat-burning mode.</p>
+                </div>
+                <div class="feature-card scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="feature-icon"><i class="ph ph-plant"></i></div>
+                    <h3>Zero Refined Sugar</h3>
+                    <p>Naturally sweetened with premium alternatives to prevent insulin spikes.</p>
+                </div>
+                <div class="feature-card scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="feature-icon"><i class="ph ph-chart-pie-slice"></i></div>
+                    <h3>Macro-Tracked</h3>
+                    <p>Every meal comes perfectly balanced and calculated for your goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Menu Carousel -->
+    <section id="menu" class="menu section dark-section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Curated Selections</h2>
+                <p>Filter by your specific body goals.</p>
+            </div>
+
+            <div class="menu-filters scroll-reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="weight-loss">Weight Loss</button>
+                <button class="filter-btn" data-filter="muscle-gain">Muscle Gain</button>
+                <button class="filter-btn" data-filter="detox">Detox</button>
+            </div>
+
+            <div class="menu-carousel scroll-reveal">
+                
+                <!-- Card 1 -->
+                <div class="menu-card" data-category="weight-loss">
+                    <div class="card-image">
+                        <img src="assets/meal_weightloss.png" alt="Zucchini Noodles">
+                        <div class="card-badge">310 kcal</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Zoodle Feta Bliss</h3>
+                        <p>Fresh green zucchini noodles with bright cherry tomatoes and feta crumble.</p>
+                        <div class="card-macros">
+                            <span>P: 18g</span>
+                            <span>C: 12g</span>
+                            <span>F: 22g</span>
+                        </div>
+                        <button class="btn btn-secondary quick-add">
+                            Quick Add <i class="ph ph-plus-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="menu-card" data-category="muscle-gain">
+                    <div class="card-image">
+                        <img src="assets/meal_muscle.png" alt="Beef Steak">
+                        <div class="card-badge">580 kcal</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Prime Steak & Puree</h3>
+                        <p>Elegantly plated sliced beef steak with sweet potato puree and roasted asparagus.</p>
+                        <div class="card-macros">
+                            <span>P: 45g</span>
+                            <span>C: 35g</span>
+                            <span>F: 25g</span>
+                        </div>
+                        <button class="btn btn-secondary quick-add">
+                            Quick Add <i class="ph ph-plus-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="menu-card" data-category="detox">
+                    <div class="card-image">
+                        <img src="assets/meal_detox.png" alt="Detox Bowl">
+                        <div class="card-badge">420 kcal</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Green Goddess Bowl</h3>
+                        <p>Wellness detox bowl with quinoa, sliced avocado, purple cabbage, and seeds.</p>
+                        <div class="card-macros">
+                            <span>P: 12g</span>
+                            <span>C: 45g</span>
+                            <span>F: 21g</span>
+                        </div>
+                        <button class="btn btn-secondary quick-add">
+                            Quick Add <i class="ph ph-plus-circle"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section id="pricing" class="pricing section">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <h2>Commit to Excellence</h2>
+                <p>Choose a plan that fits your lifestyle.</p>
+            </div>
+
+            <div class="pricing-toggle-wrap scroll-reveal">
+                <span class="toggle-label">Weekly</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricing-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label">Monthly <span class="savings">Save 15%</span></span>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Plan 1 -->
+                <div class="pricing-card scroll-reveal">
+                    <div class="plan-header">
+                        <h3>Standard Lean</h3>
+                        <div class="price"><span class="currency">$</span><span class="amount" data-weekly="149" data-monthly="506">149</span></div>
+                        <p class="billing-period">per week</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="ph-fill ph-check-circle"></i> 2 Meals per day</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Calorie controlled</li>
+                        <li><i class="ph-fill ph-check-circle"></i> 5 Delivery days</li>
+                        <li><i class="ph ph-x-circle"></i> Weekend meals</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline plan-btn">Select Plan</a>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="pricing-card premium scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Lumina Premium</h3>
+                        <div class="price"><span class="currency">$</span><span class="amount" data-weekly="229" data-monthly="778">229</span></div>
+                        <p class="billing-period">per week</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="ph-fill ph-check-circle"></i> 3 Meals & 2 Snacks</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Personalized macros</li>
+                        <li><i class="ph-fill ph-check-circle"></i> 7 Delivery days</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Priority support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary plan-btn">Select Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">Lumina Greens<span class="dot">.</span></a>
+                <p>Elevating dietary nutrition to a luxurious culinary art form.</p>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Developer</h4>
+                <p>👤 Mohamed Adel</p>
+                <p><i class="ph ph-envelope-simple"></i> <a href="mailto:121mohamedadel121@gmail.com">121mohamedadel121@gmail.com</a></p>
+                <p><i class="ph ph-phone"></i> 01005483665</p>
+                <p><i class="ph ph-map-pin"></i> Cairo, Egypt</p>
+                <p><i class="ph ph-linkedin-logo"></i> <a href="https://www.linkedin.com/in/mohamed-adel-17b969253/" target="_blank">LinkedIn Profile</a></p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#pricing">Pricing Plans</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Lumina Greens. Developed by Mohamed Adel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="ph ph-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
